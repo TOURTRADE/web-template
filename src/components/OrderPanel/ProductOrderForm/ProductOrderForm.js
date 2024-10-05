@@ -13,6 +13,7 @@ import {
   FieldTextInput,
   InlineTextButton,
   PrimaryButton,
+  StripeOnRampButton,
   H3,
   H6,
 } from '../../../components';
@@ -274,6 +275,8 @@ const renderForm = formRenderProps => {
         </div>
       ) : null}
 
+      {StripeOnRampButton}
+          
       <div className={css.submitButton}>
         <PrimaryButton type="submit" inProgress={submitInProgress} disabled={submitDisabled}>
           {hasStock ? (
